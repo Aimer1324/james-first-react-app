@@ -1,17 +1,31 @@
 import Link from 'next/link';
 
-
 export function NavBar() {
-    return (
-        <div style={{backgroundColor: 'lightgreen', padding: '0 10px'}}>
-            My Nav Bar
+  return (
+    <div style={{ backgroundColor: 'lightgreen', padding: '0 6rem', height: '5rem' }}>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          height: '100%',
+          alignItems: 'center',
+        }}
+      >
+        <div>your friendly neighbourhood software geek at your service</div>
 
-            <Link href="/" style={{padding: '0 10px'}}>
-                Home
-            </Link>
-            <Link href="/new-page" style={{padding: '0 10px'}}>
-                New Page
-            </Link>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            width: '15rem',
+            background: 'red',
+          }}
+        >
+          <Link href="/">Home</Link>
+          <Link href="/new-page">New Page</Link>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

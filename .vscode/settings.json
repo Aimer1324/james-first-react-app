@@ -1,0 +1,7 @@
+{  
+    "prettier.configPath": ".prettierrc",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "eslint.run": "onType", // Lint as you type
+    "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"]
+}
