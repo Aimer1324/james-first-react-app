@@ -2,7 +2,15 @@ import Link from 'next/link';
 
 export function NavBar() {
   return (
-    <div style={{ backgroundColor: 'lightgreen', padding: '0 6rem', height: '5rem' }}>
+    <div
+      style={{
+        backgroundColor: 'lightgreen',
+        padding: '0 6rem',
+        height: '5rem',
+        position: 'absolute',
+        width: '100%',
+      }}
+    >
       <div
         style={{
           display: 'flex',

@@ -22,9 +22,18 @@ export function HeroSection() {
           border: '10px solid black',
           padding: '0 5rem',
           margin: '0 6rem',
+          background: 'rgba(0, 0, 0, 0.2)',
+          backdropFilter: 'blur(6px)',
         }}
       >
-        <div style={{ display: 'flex', justifyContent: 'center', height: '4rem', marginTop: '10px' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            height: '4rem',
+            marginTop: '10px',
+          }}
+        >
           <h2>James Hong Phan - Personal Website</h2>
         </div>
         <div
