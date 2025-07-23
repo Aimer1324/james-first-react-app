@@ -14,16 +14,29 @@ export function HeroSection() {
     >
       <div
         style={{
+          display: 'absolute',
+          width: '100vw',
+          left: '-2rem',
+          height: '50rem',
+          backgroundImage: 'url("/tester.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      <div
+        style={{
+          position: 'relative',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           height: '15rem',
           alignItems: 'center',
-          border: '10px solid black',
-          padding: '0 5rem',
-          margin: '0 6rem',
+          padding: '1 2rem',
           background: 'rgba(0, 0, 0, 0.2)',
           backdropFilter: 'blur(6px)',
+          borderRadius: '1rem',
+          boxShadow: '4px 4px 4px #a7c3e8',
         }}
       >
         <div

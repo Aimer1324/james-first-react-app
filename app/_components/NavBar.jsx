@@ -4,11 +4,13 @@ export function NavBar() {
   return (
     <div
       style={{
-        backgroundColor: 'lightgreen',
-        padding: '0 6rem',
+        backgroundColor: '#a7c3e8',
+        padding: '0 3rem',
         height: '5rem',
-        position: 'absolute',
+        position: 'fixed',
         width: '100%',
+        top: '0',
+        left: '0',
       }}
     >
       <div
@@ -25,9 +27,9 @@ export function NavBar() {
         <div
           style={{
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: 'end',
+            gap: '0.5rem',
             width: '15rem',
-            background: 'red',
           }}
         >
           <Link href="/">Home</Link>
