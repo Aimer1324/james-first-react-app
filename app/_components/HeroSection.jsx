@@ -60,7 +60,7 @@ export function HeroSection() {
         >
           <div>Second Year Student at the University of Irvine, California.</div>
           <div>Currently pursuing a major in Computer Science</div>
-          <div>Expected Graduation: 2028</div>
+          <div>Expected Graduation - 2028</div>
         </div>
       </div>
     </div>
