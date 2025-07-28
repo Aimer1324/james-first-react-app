@@ -1,29 +1,24 @@
+import Image from 'next/image';
+
 export function HeroSection() {
   return (
     <div
       style={{
+        // width: '100vw',
+        height: '100vh',
+        // backgroundImage: 'url("/tester.jpg")',
+        // backgroundSize: 'cover',
+        // backgroundPosition: 'center',
+        // backgroundRepeat: 'no-repeat',
+        position: 'relative',
         display: 'flex',
-        flexDirection: 'column',
         justifyContent: 'center',
-        height: '50rem',
-        backgroundImage: 'url("/tester.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        alignItems: 'center',
+        // marginLeft: '-2rem',
+        // width: '100vw',
+        // zIndex: '-1',
       }}
     >
-      <div
-        style={{
-          display: 'absolute',
-          width: '100vw',
-          left: '-2rem',
-          height: '50rem',
-          backgroundImage: 'url("/tester.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
       <div
         style={{
           position: 'relative',
@@ -32,7 +27,7 @@ export function HeroSection() {
           justifyContent: 'center',
           height: '15rem',
           alignItems: 'center',
-          padding: '1 2rem',
+          padding: '1rem 2rem',
           background: 'rgba(0, 0, 0, 0.2)',
           backdropFilter: 'blur(6px)',
           borderRadius: '1rem',

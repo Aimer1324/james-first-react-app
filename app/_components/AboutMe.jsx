@@ -1,30 +1,28 @@
+import Image from 'next/image';
+
 export function AboutMe() {
   return (
     <div
       style={{
-        marginTop: '1rem',
+        position: 'relative',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
         gap: '4.5rem',
-        height: '25rem',
+        height: '100vh',
         alignItems: 'center',
-        backgroundImage: 'url("/tester.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
       }}
     >
       <div
         style={{
           border: '3px solid black',
-          padding: '25px',
+          overflow: 'hidden',
           background: 'rgba(62, 4, 79, 0.2)',
           backdropFilter: 'blur(2px)',
           borderRadius: '1rem',
         }}
       >
-        <img src="/tennisabout.jpg" alt="About me" height={200} padding="10px" />
+        <Image src="/tennisabout.jpg" alt="About me" width={200} height={200} />
       </div>
       <div
         style={{
