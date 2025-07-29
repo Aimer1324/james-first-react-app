@@ -1,6 +1,7 @@
 import './reset.css';
 import './globals.css';
 import { NavBar } from './_components/NavBar';
+import { Footer } from './_components/Footer';
 import Image from 'next/image';
 
 export const metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
           />
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );
