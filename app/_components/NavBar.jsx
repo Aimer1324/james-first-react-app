@@ -5,7 +5,7 @@ export function NavBar() {
     <div
       style={{
         backgroundColor: '#a7c3e8',
-        padding: '0 3rem',
+        padding: '0 2rem',
         height: '5rem',
         position: 'fixed',
         width: '100%',

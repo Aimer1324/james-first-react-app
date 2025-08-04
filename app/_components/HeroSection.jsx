@@ -42,7 +42,7 @@ export function HeroSection() {
             marginTop: '10px',
           }}
         >
-          <h2>James Hong Phan - Personal Website</h2>
+          <h2 style={{ fontSize: '2rem' }}>James Hong Phan - Personal Website</h2>
         </div>
         <div
           style={{

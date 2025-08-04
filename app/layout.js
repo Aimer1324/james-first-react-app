@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ padding: '0 2rem', position: 'relative' }}>
+      <body style={{ padding: '0 2rem', position: 'relative', height: '100%' }}>
         <NavBar />
         <div
           style={{
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
             }}
           />
         </div>
-        {children}
+        <main style={{ paddingBottom: '15rem', position: 'relative' }}>{children}</main>
         <Footer />
       </body>
     </html>

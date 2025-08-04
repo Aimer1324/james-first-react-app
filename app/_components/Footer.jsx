@@ -6,42 +6,44 @@ export function Footer() {
       style={{
         backgroundColor: '#a7c3e8',
         height: '15rem',
-        position: 'relative',
+        position: 'absolute',
         width: '100%',
         bottom: '0',
         left: '0',
-        zIndex: '1000',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyItems: 'center',
-        gap: '9rem',
+        padding: '0 2rem',
       }}
     >
       <div
         style={{
+          width: '100%',
+          height: '100%',
           display: 'flex',
-          flexDirection: 'column',
-          maxWidth: '16rem',
-          justifyContent: 'center',
-          paddingLeft: '1rem',
+          flexDirection: 'row',
+          justifyItems: 'center',
+          justifyContent: 'space-between',
         }}
       >
-        <div>
-          <h2 style={{ fontSize: '3rem' }}>Footer</h2>
-        </div>
-        <div>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            maxWidth: '16rem',
+            justifyContent: 'center',
+          }}
+        >
+          <h2 style={{ fontSize: '3rem', margin: '0' }}>Footer</h2>
           <p>This is gonna be the footer</p>
           <p>How do I spread it to the whole width of the page?</p>
         </div>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-        }}
-      >
-        <Image src="/mylogo.jpg" alt="My Logo" width={170} height={170} />
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+          }}
+        >
+          <Image src="/mylogo.jpg" alt="My Logo" width={170} height={170} />
+        </div>
       </div>
     </div>
   );
