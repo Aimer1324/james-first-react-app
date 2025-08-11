@@ -34,7 +34,7 @@ export function NavBar() {
           }}
         >
           <Link href="/">Home</Link>
-          <Link href="/new-page">New Page</Link>
+          <Link href="/projects">Projects</Link>
         </div>
       </div>
     </div>

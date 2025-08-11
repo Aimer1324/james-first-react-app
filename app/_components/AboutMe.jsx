@@ -40,11 +40,11 @@ export function AboutMe() {
       >
         <div
           style={{
-            border: '3px solid black',
             overflow: 'hidden',
-            background: 'rgba(62, 4, 79, 0.2)',
-            backdropFilter: 'blur(2px)',
+            background: 'rgba(0, 0, 0, 0.2)',
+            backdropFilter: 'blur(6px)',
             borderRadius: '1rem',
+            boxShadow: '4px 4px 4px #a7c3e8',
             minWidth: '250px',
           }}
         >
@@ -52,10 +52,10 @@ export function AboutMe() {
         </div>
         <div
           style={{
-            border: '3px solid black',
+            background: 'rgba(0, 0, 0, 0.2)',
+            backdropFilter: 'blur(6px)',
             borderRadius: '1rem',
-            background: 'rgba(155, 21, 196, 0.2)',
-            backdropFilter: 'blur(2px)',
+            boxShadow: '4px 4px 4px #a7c3e8',
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
