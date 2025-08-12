@@ -3,6 +3,7 @@ import Image from 'next/image';
 export function HeroSection() {
   return (
     <div
+      id='hero-section'
       style={{
         // width: '100vw',
         height: '100vh',
@@ -21,6 +22,7 @@ export function HeroSection() {
     >
       <div
         style={{
+
           position: 'relative',
           display: 'flex',
           flexDirection: 'column',

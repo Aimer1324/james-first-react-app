@@ -3,7 +3,9 @@ import Image from 'next/image';
 export function AboutMe() {
   return (
     <div
+      id='about-me'
       style={{
+        paddingTop: '5rem',
         width: '100%',
         position: 'relative',
         display: 'flex',
