@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function HeroSection() {
   return (
     <div
-      id='hero-section'
+      id="hero-section"
       style={{
         // width: '100vw',
         height: '100vh',
@@ -22,7 +22,6 @@ export function HeroSection() {
     >
       <div
         style={{
-
           position: 'relative',
           display: 'flex',
           flexDirection: 'column',
@@ -34,6 +33,7 @@ export function HeroSection() {
           backdropFilter: 'blur(6px)',
           borderRadius: '1rem',
           boxShadow: '4px 4px 4px #a7c3e8',
+          border: 'solid rgba(0, 0, 0, 0.2) 1px',
         }}
       >
         <div

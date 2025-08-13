@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function AboutMe() {
   return (
     <div
-      id='about-me'
+      id="about-me"
       style={{
         paddingTop: '5rem',
         width: '100%',
@@ -48,6 +48,7 @@ export function AboutMe() {
             borderRadius: '1rem',
             boxShadow: '4px 4px 4px #a7c3e8',
             minWidth: '250px',
+            border: 'solid rgba(0, 0, 0, 0.2) 1px',
           }}
         >
           <Image src="/tennisabout.jpg" alt="About me" width={250} height={250} />
@@ -64,6 +65,7 @@ export function AboutMe() {
             justifyContent: 'center',
             padding: '1rem',
             height: '250px',
+            border: 'solid rgba(0, 0, 0, 0.2) 1px',
           }}
         >
           <h2 style={{ fontSize: '2rem', margin: '0' }}>Who am I?</h2>

@@ -6,6 +6,12 @@ import { useState, useEffect } from 'react';
 export function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const listLinks = [
+    { href: '/#hero-section', text: 'Home' },
+    { href: '/#about-me', text: 'About Me' },
+    { href: '/#projects', text: 'Projects' },
+  ];
+
   useEffect(() => {
     const onScroll = () => {
       setIsScrolled(window.scrollY > 10); // adjust offset as needed
@@ -39,30 +45,39 @@ export function NavBar() {
           alignItems: 'center',
         }}
       >
-        <div>your friendly neighbourhood software geek at your service</div>
+        <p style={{ margin: '0' }}>your friendly neighbourhood software geek at your service</p>
 
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'end',
-            gap: '0.5rem',
-            width: '15rem',
-          }}
-        >
-          <Link href="/#hero-section">Home</Link>
-          <Link href="/#about-me">About Me</Link>
-          <Link href="/projects">Projects</Link>
-        </div>
+        <NavBarNavigation links={listLinks} />
       </div>
     </div>
   );
 }
 
-function NavBarNavigation() {
+function NavBarNavigation({ links }) {
   return (
     <nav>
       {/* TODO: Create a dynamic list of links - in general, not burger menu*/}
-      <ul></ul>
+      <ul
+        style={{
+          display: 'flex',
+          justifyContent: 'end',
+          height: '100%',
+          gap: '1rem',
+          width: '17rem',
+          listStyle: 'none',
+        }}
+      >
+        {links.map((link, index) => (
+          <li
+            key={index}
+            style={{
+              height: '100%',
+            }}
+          >
+            <HoverLink href={link.href}>{link.text}</HoverLink>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }
@@ -71,3 +86,24 @@ function NavBarNavigation() {
 //       Make it compatible and resuable with the previous todo above
 
 // TODO: Use the new NavBarNavigation in place of the div from 44 to 55
+
+function HoverLink({ href, children }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <Link
+      href={href}
+      style={{
+        color: isHovered ? '#000000' : 'none',
+        backgroundColor: isHovered ? '#ffffff' : 'transparent',
+        textDecoration: 'none',
+        transition: 'color 0.3s ease',
+        height: '100%',
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {children}
+    </Link>
+  );
+}
