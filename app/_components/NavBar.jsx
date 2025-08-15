@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import './NavBar.css';
 
 export function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,18 +23,9 @@ export function NavBar() {
 
   return (
     <div
+      id="navbar"
       style={{
-        backgroundColor: '#a7c3e8',
-        padding: '0 2rem',
         height: `${isScrolled ? '3rem' : '5rem'}`,
-        position: 'fixed',
-        width: '100%',
-        top: '0',
-        left: '0',
-        zIndex: '1000',
-        transition: `
-        height 150ms
-        `,
       }}
     >
       <div
@@ -54,31 +46,29 @@ export function NavBar() {
 }
 
 function NavBarNavigation({ links }) {
+  const [isOpened, setIsOpened] = useState(false);
+
   return (
-    <nav>
-      {/* TODO: Create a dynamic list of links - in general, not burger menu*/}
-      <ul
-        style={{
-          display: 'flex',
-          justifyContent: 'end',
-          height: '100%',
-          gap: '1rem',
-          width: '17rem',
-          listStyle: 'none',
+    <>
+      <button
+        id="nav-toggle"
+        onClick={() => {
+          setIsOpened((param) => !param);
         }}
       >
-        {links.map((link, index) => (
-          <li
-            key={index}
-            style={{
-              height: '100%',
-            }}
-          >
-            <HoverLink href={link.href}>{link.text}</HoverLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
+        Asd
+      </button>
+      <nav id="navigation" style={{ display: `${isOpened ? 'flex' : 'none'}` }}>
+        {/* TODO: Create a dynamic list of links - in general, not burger menu*/}
+        <ul>
+          {links.map((link, index) => (
+            <li key={index}>
+              <HoverLink href={link.href}>{link.text}</HoverLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 }
 
@@ -94,11 +84,7 @@ function HoverLink({ href, children }) {
     <Link
       href={href}
       style={{
-        color: isHovered ? '#000000' : 'none',
         backgroundColor: isHovered ? '#ffffff' : 'transparent',
-        textDecoration: 'none',
-        transition: 'color 0.3s ease',
-        height: '100%',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

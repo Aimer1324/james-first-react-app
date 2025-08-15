@@ -1,0 +1,90 @@
+#navbar {
+  background-color: #a7c3e8;
+  padding: 0 2rem;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: height 150ms ease;
+}
+
+#nav-toggle {
+  display: flex;
+  z-index: 10;
+}
+
+#navigation {
+  height: 100vh;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 0;
+  background: #a7c3e8;
+}
+
+#navigation ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  width: 17rem;
+  list-style: none;
+  margin: 0;
+}
+
+#navigation a {
+  height: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+}
+
+@media (min-width: 769px) {
+  #nav-toggle {
+    display: none;
+  }
+
+  #navigation {
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+
+  #navigation ul {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 17rem;
+    list-style: none;
+    margin: 0;
+  }
+
+  #navigation li {
+    height: 100%;
+    display: flex;
+  }
+
+  #navigation a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+  }
+}
+
+#navbar {
+  background-color: black;
+}
+
+/* Todo Move styling from each file into it's own respective css file*/
