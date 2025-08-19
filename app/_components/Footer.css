@@ -1,0 +1,29 @@
+#footer {
+  background-color: #a7c3e8;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 2rem;
+}
+
+#footer-items {
+  width: 100%;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+#footer-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 16rem;
+  justify-content: center;
+}
+
+#footer-image {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}

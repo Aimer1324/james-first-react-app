@@ -1,60 +1,13 @@
-import Image from 'next/image';
+import './HeroSection.css';
 
 export function HeroSection() {
   return (
-    <div
-      id="hero-section"
-      style={{
-        // width: '100vw',
-        height: '100vh',
-        // backgroundImage: 'url("/tester.jpg")',
-        // backgroundSize: 'cover',
-        // backgroundPosition: 'center',
-        // backgroundRepeat: 'no-repeat',
-        position: 'relative',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        // marginLeft: '-2rem',
-        // width: '100vw',
-        // zIndex: '-1',
-      }}
-    >
-      <div
-        style={{
-          position: 'relative',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          height: '15rem',
-          alignItems: 'center',
-          padding: '1rem 2rem',
-          background: 'rgba(0, 0, 0, 0.2)',
-          backdropFilter: 'blur(6px)',
-          borderRadius: '1rem',
-          boxShadow: '4px 4px 4px #a7c3e8',
-          border: 'solid rgba(0, 0, 0, 0.2) 1px',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            height: '4rem',
-            marginTop: '10px',
-          }}
-        >
+    <div id="hero-section" style={{ height: '100vh' }}>
+      <div id="hero-box" style={{ height: '15rem' }}>
+        <div id="title" style={{ height: '4rem' }}>
           <h2 style={{ fontSize: '2rem' }}>James Hong Phan - Personal Website</h2>
         </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '8rem',
-          }}
-        >
+        <div id="description" style={{ height: '8rem' }}>
           <div>Second Year Student at the University of Irvine, California.</div>
           <div>Currently pursuing a major in Computer Science</div>
           <div>Expected Graduation - 2028</div>
