@@ -25,19 +25,11 @@ export function NavBar() {
     <div
       id="navbar"
       style={{
-        height: `${isScrolled ? '3rem' : '5rem'}`,
+        height: `${isScrolled ? '4rem' : '5rem'}`,
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          height: '100%',
-          alignItems: 'center',
-        }}
-      >
-        <p style={{ margin: '0' }}>your friendly neighbourhood software geek at your service</p>
+      <div id="innernav">
+        <p>your friendly neighbourhood software geek at your service</p>
 
         <NavBarNavigation links={listLinks} />
       </div>
@@ -55,11 +47,13 @@ function NavBarNavigation({ links }) {
         onClick={() => {
           setIsOpened((param) => !param);
         }}
+        className={isOpened ? 'open' : ''}
       >
-        Asd
+        <div></div>
+        <div></div>
+        <div></div>
       </button>
-      <nav id="navigation" style={{ display: `${isOpened ? 'flex' : 'none'}` }}>
-        {/* TODO: Create a dynamic list of links - in general, not burger menu*/}
+      <nav id="navigation" style={{ display: `${isOpened ? 'flex' : ''}` }}>
         <ul>
           {links.map((link, index) => (
             <li key={index}>
@@ -71,11 +65,6 @@ function NavBarNavigation({ links }) {
     </>
   );
 }
-
-// TODO: Create a reusable link component, such as hovering over links changes the color or shade
-//       Make it compatible and resuable with the previous todo above
-
-// TODO: Use the new NavBarNavigation in place of the div from 44 to 55
 
 function HoverLink({ href, children }) {
   const [isHovered, setIsHovered] = useState(false);

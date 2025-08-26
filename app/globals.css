@@ -23,6 +23,11 @@ body {
   padding: 0;
 }
 
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 /* * {
   outline: 1px solid red;
 } */

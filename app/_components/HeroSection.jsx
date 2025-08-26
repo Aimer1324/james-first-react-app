@@ -2,15 +2,18 @@ import './HeroSection.css';
 
 export function HeroSection() {
   return (
-    <div id="hero-section" style={{ height: '100vh' }}>
-      <div id="hero-box" style={{ height: '15rem' }}>
-        <div id="title" style={{ height: '4rem' }}>
-          <h2 style={{ fontSize: '2rem' }}>James Hong Phan - Personal Website</h2>
-        </div>
-        <div id="description" style={{ height: '8rem' }}>
-          <div>Second Year Student at the University of Irvine, California.</div>
-          <div>Currently pursuing a major in Computer Science</div>
-          <div>Expected Graduation - 2028</div>
+    <div id="hero-section">
+      <div id="hero-box">
+        <h2>James Hong Phan - Personal Website</h2>
+        <div id="description">
+          <p>
+            Second Year Student at the University of Irvine, California. Currently pursuing a major in Computer Science.
+            Expected Graduation is June 2028. I am currently completing my second year of university, with hopes of
+            gaining some experience in the field of computer science, with a specialization in cybersecurity and
+            networking. This website is a personal project that I began in the Summer of 2025, and is something that I
+            will keep expanding and improving upon as I progress further and further into my career. It is a project
+            designed with React, JavaScript, and HTML.
+          </p>
         </div>
       </div>
     </div>

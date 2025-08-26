@@ -8,6 +8,77 @@
   align-items: center;
 }
 
+#about-me h1:first-of-type {
+  font-weight: 600;
+  color: #333333;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+#who-am-i {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  align-items: center;
+}
+
+#image {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 4px #a7c3e8;
+  min-width: 250px;
+  width: 100%;
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+#image img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+#text {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 4px #a7c3e8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+@media (min-width: 640px) {
+  #who-am-i {
+    flex-direction: row-reverse;
+  }
+
+  #text {
+    height: 250px;
+  }
+}
+
+/* #about-me {
+  padding-top: 5rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #about-me h2:first-of-type {
   font-weight: 600;
   color: #333333;
@@ -52,3 +123,8 @@
   height: 250px;
   border: solid rgba(0, 0, 0, 0.2) 1px;
 }
+
+#text h2 {
+  font-size: 2rem;
+  margin: 0;
+} */

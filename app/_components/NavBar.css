@@ -1,6 +1,6 @@
 #navbar {
   background-color: #a7c3e8;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   height: 5rem;
   position: fixed;
   width: 100%;
@@ -10,13 +10,55 @@
   transition: height 150ms ease;
 }
 
+#innernav {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+#innernav p {
+  margin: 0;
+  max-width: 15rem;
+}
+
 #nav-toggle {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem; /* Set a width for the button area */
+  height: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   z-index: 10;
+}
+
+#nav-toggle div {
+  width: 70%;
+  height: 0.2rem;
+  background: darkslateblue;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+#nav-toggle.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#nav-toggle.open div:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 #navigation {
   height: 100vh;
+  width: 14rem;
   position: absolute;
   display: none;
   right: 0;
@@ -45,7 +87,13 @@
   padding: 0.6rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 640px) {
+  #innernav p {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
   #nav-toggle {
     display: none;
   }
@@ -54,6 +102,7 @@
     position: relative;
     display: flex;
     height: 100%;
+    width: 17rem;
   }
 
   #navigation ul {
