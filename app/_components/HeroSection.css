@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 5rem);
 }
 
 #hero-box {
@@ -55,10 +55,17 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  gap: 1rem;
 }
 
 #description p {
   text-align: center;
+}
+
+#description img {
+  scale: 80%;
+  border-radius: 100%;
+  border: solid grey 3px;
 }
 
 /* #description {

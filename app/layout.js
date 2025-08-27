@@ -1,12 +1,12 @@
 import './reset.css';
 import './globals.css';
-import { NavBar } from './_components/NavBar';
+import NavBar from './_components/NavBar';
 import { Footer } from './_components/Footer';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'My First React App',
-  description: "This is James' first React App",
+  title: 'Powered By Phan',
+  description: 'James Phan personal portfolio',
 };
 
 export default function RootLayout({ children }) {
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
             }}
           />
         </div>
-        <main style={{ paddingBottom: '15rem', position: 'relative' }}>{children}</main>
+        <main style={{ paddingTop: '5rem', paddingBottom: '15rem', position: 'relative' }}>{children}</main>
         <Footer />
       </body>
     </html>

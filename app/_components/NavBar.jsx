@@ -3,8 +3,14 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import './NavBar.css';
+import { useRef } from 'react';
+import dynamic from 'next/dynamic';
 
-export function NavBar() {
+export default dynamic(() => Promise.resolve(NavBar), {
+  ssr: false,
+});
+
+function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const listLinks = [
@@ -40,10 +46,22 @@ export function NavBar() {
 function NavBarNavigation({ links }) {
   const [isOpened, setIsOpened] = useState(false);
 
+  const catMenu = useRef(null);
+  const navButton = useRef(null);
+
+  const closeOpenMenu = (e) => {
+    if (isOpened && !catMenu.current?.contains(e.target) && !navButton.current?.contains(e.target)) {
+      setIsOpened(false);
+    }
+  };
+
+  document.addEventListener('mousedown', closeOpenMenu);
+
   return (
     <>
       <button
         id="nav-toggle"
+        ref={navButton}
         onClick={() => {
           setIsOpened((param) => !param);
         }}
@@ -53,7 +71,7 @@ function NavBarNavigation({ links }) {
         <div></div>
         <div></div>
       </button>
-      <nav id="navigation" style={{ display: `${isOpened ? 'flex' : ''}` }}>
+      <nav id="navigation" ref={catMenu} style={{ display: `${isOpened ? 'flex' : ''}` }}>
         <ul>
           {links.map((link, index) => (
             <li key={index}>
