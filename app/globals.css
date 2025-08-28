@@ -28,6 +28,18 @@ h2 {
   margin: 0;
 }
 
+#bodychange {
+  padding: 0 2rem;
+  position: relative;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  #bodychange {
+    padding: 0 4rem;
+  }
+}
+
 /* * {
   outline: 1px solid red;
 } */

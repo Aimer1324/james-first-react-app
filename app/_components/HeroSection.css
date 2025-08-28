@@ -81,5 +81,6 @@
 @media (min-width: 640px) {
   #hero-section {
     margin-top: -0.5rem;
+    margin-bottom: -3rem;
   }
 }

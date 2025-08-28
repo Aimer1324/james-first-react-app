@@ -14,7 +14,7 @@ function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const listLinks = [
-    { href: '/#hero-section', text: 'Home' },
+    { href: '/#navbar', text: 'Home' },
     { href: '/#about-me', text: 'About Me' },
     { href: '/#projects', text: 'Projects' },
   ];

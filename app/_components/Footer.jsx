@@ -17,10 +17,3 @@ export function Footer() {
     </div>
   );
 }
-
-// TODO: Make website dynamic for desktop
-// TODO: Add more content to hero section
-// TODO: Fix burger menu
-//           - Add icon to the burger icon
-//           - Fix it so that you can close the menu by either clicking off of it,
-//             or with an x button that replaces the burger icon
