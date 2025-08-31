@@ -19,6 +19,20 @@ export function AboutMe() {
           </p>
         </div>
       </div>
+      <div id="who-am-i">
+        <div id="text">
+          <h2>Hobbies</h2>
+
+          <p>
+            As I mentioned, some of my hobbies include tennis, badminton, and piano! I have been playing both tennis and
+            the piano since I was 5. In addition to music, I also played saxophone in high school. As for badminton and
+            archery, I started both of them in my senior year of high school.
+          </p>
+        </div>
+        <div id="image">
+          <Image src="/tennis.jpg" alt="Wilson Tennis Store" width={250} height={250} />
+        </div>
+      </div>
     </div>
   );
 }

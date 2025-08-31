@@ -12,7 +12,7 @@ export function Projects() {
       }}
     >
       <h2>Projects</h2>
-      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'space-between' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', alignContent: 'space-between' }}>
         <p>Project 1</p>
         <p>Project 2</p>
         <p>Project 3</p>

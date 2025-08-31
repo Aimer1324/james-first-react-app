@@ -1,6 +1,7 @@
 #about-me {
   padding-top: 5rem;
   margin-top: 2rem;
+  margin-bottom: 10rem;
   width: 100%;
   position: relative;
   display: flex;
@@ -26,7 +27,7 @@
   justify-content: space-between;
   gap: 2rem;
   margin-top: 2rem;
-  margin-bottom: 10rem;
+
   align-items: center;
 }
 
@@ -64,6 +65,7 @@
   #about-me {
     margin-top: -3rem;
     padding-top: 8rem;
+    margin-bottom: 10rem;
     width: 100%;
     position: relative;
     display: flex;
@@ -90,7 +92,6 @@
     justify-content: space-between;
     gap: 3rem;
     margin-top: 2rem;
-    margin-bottom: 10rem;
     align-items: center;
   }
 
