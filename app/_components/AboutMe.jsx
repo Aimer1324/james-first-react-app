@@ -19,7 +19,7 @@ export function AboutMe() {
           </p>
         </div>
       </div>
-      <div id="who-am-i">
+      <div id="hobbies">
         <div id="text">
           <h2>Hobbies</h2>
 
